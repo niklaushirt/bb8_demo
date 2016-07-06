@@ -1,0 +1,93 @@
+* {
+	text-align: center;
+	font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color: #ececec;
+}
+
+html {
+	font-size: 0.9em;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(to bottom right, #2d3f4a, #1d3649);
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.lines {
+	vertical-align: baseline;
+}
+.lines {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+}
+.lines::before, .lines::after {
+	content: " ";
+	height: 1px;
+	background-color: #9a9a9a;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+}
+
+.step {
+	padding: 30px 30px 20px 30px;
+	margin: 30px 20px;
+	border: 1px solid #9a9a9a;
+	background-color: #6a6a6a;
+	text-align: left;
+}
+
+.lead {
+	width: 70%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+h1, h3 {
+	font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1.5rem;
+	margin: 0.1em 0;
+	padding: 20px;
+}
+
+li {
+	text-align: left;
+	margin: 3px 0;
+}
+
+h2 {
+	font-size: 1.4rem;
+	margin-top: 0.1em;
+}
+
+h3 {
+	font-size: 1.2rem;
+	text-align: left;
+	margin: 0 0 0.5em 0;
+}
+
+p {
+	font-size: 1rem;
+	text-align: left;
+}
+
+.outer-main {
+	position: relative;
+	min-height: 100vh;
+}
+
+.main {
+	margin: 0px 11% 0 11%;
+}
