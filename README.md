@@ -18,7 +18,6 @@ You will require the following devices for this demo.
 
 The laptop will be working as the IoT gateway to connect to BB-8 and receiving the MQTT commands. Here the gateway subscribes to `iot-2/cmd/run/fmt/json` topic.
 
-<img align="right" src="images/IoT-overview.png">
 
 ## Getting The Code
 
@@ -28,7 +27,7 @@ The laptop will be working as the IoT gateway to connect to BB-8 and receiving t
 ### Create and configure the IOT Foundation 
 Create an instance of Internet of Things Foundation from Bluemix catalog and name it `IOT Foundation` for example.
 
-![alt text](images/IoTF-service.png "Internet of Things Foundation")
+
 
 From IoTF Dashboard, perform the following tasks.
 
@@ -70,7 +69,7 @@ Replace the values of the deviceid, authtoken, apikey, and apitoken with the val
 
 Following is a screenshot of IoTF dashboard.
 
-![alt text](images/IoTF-dashboard.png "Internet of Things Foundation Dashboard")
+
 
 ### Modify the BLE ID
 The BB-8 and Ollie use a Bluetooth Low Energy (LE) interface, also known as "Bluetooth Smart" or "Bluetooth 4.0/4.1". You must have a hardware adapter that supports the Bluetooth 4.x+ standard to connect your computer to your BB-8 or Ollie.
@@ -129,13 +128,11 @@ subscribed to iot-2/cmd/run/fmt/json
 ```
 5. You are now ready to create an Node-RED Starter app from Bluemix catalog.
 
-![alt text](images/Node_RED-starter.png "Node-RED Starter")
+
 
 
 ## Node-RED
 
-
-![alt text](images/Node_RED-app-services.png "Node-RED Starter")
 
 1. Bind the IoTF service created before to this app. The resultant application dashboard looks like the diagram above.
 2. Now copy the Node-RED flow from NodeRed/NORDERED.json and import into Node-RED.
