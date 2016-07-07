@@ -150,6 +150,9 @@ Once you have imported the flow you will need to double click on the IBM IoT out
 
 
 ## Mobile App
+
+![alt text](images/iPhone_gif.gif "Phone")
+
 Make sure you have installed the CloudFoundry command line.
 
 Make sure the the IOT Foundation name in the manifest.yml and app.js file (line 21) correspond to the name you have given your IOT service created earlier.
@@ -166,4 +169,4 @@ Be aware that both are case sensitive!
 Now you should can activate the debug nodes in NodeRed and you should get some data streaming through your flow when you move the phone.
 And if all is well setup your bb8 should start rolling...
 
-Happy demoing...# bb8_demo
+Happy demoing...
