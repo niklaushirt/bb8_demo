@@ -2,8 +2,8 @@
 
 
 This is a sample project to control a BB-8 Droid based on the works of [shamimshossain](https://github.com/shamimshossain/bb8-bluemix)
-using MQTT, the [IBM internet of Things Foundation](http://www.ibm.com/cloud-computing/bluemix/solutions/iot/), and the [sphero.js](https://github.com/orbotix/sphero.js),
-. This project also uses the MQTT wrapper from the [parrot-sample](https://github.com/IBM-Bluemix/parrot-sample).
+using MQTT, the [IBM internet of Things Foundation](http://www.ibm.com/cloud-computing/bluemix/solutions/iot/), and the [sphero.js](https://github.com/orbotix/sphero.js). 
+This project also uses the MQTT wrapper from the [parrot-sample](https://github.com/IBM-Bluemix/parrot-sample).
 
 You can control movement of the droid using a Node-RED flow. A sample flow has been included below. 
 
@@ -79,7 +79,7 @@ Following is a screenshot of IoTF dashboard.
 
 ![alt text](images/BLE_gif.gif "BLE")
 
-The BB-8 and Ollie use a Bluetooth Low Energy (LE) interface, also known as "Bluetooth Smart" or "Bluetooth 4.0/4.1". You must have a hardware adapter that supports the Bluetooth 4.x+ standard to connect your computer to your BB-8 or Ollie.
+The BB-8 uses a Bluetooth Low Energy (LE) interface, also known as "Bluetooth Smart" or "Bluetooth 4.0/4.1". You must have a hardware adapter that supports the Bluetooth 4.x+ standard to connect your computer to your BB-8.
 
 Run the following command:
 
@@ -132,7 +132,7 @@ Output of ping command
   checksum: 254 }
 End of ping data
 MQTT client connected to IBM IoT Cloud.
-Connected Sphero ID: spheroownedbyshamim
+Connected Sphero ID: my_little_sphero
 subscribed to iot-2/cmd/run/fmt/json
 ```
 5. You are now ready to create an Node-RED Starter app from Bluemix catalog.
@@ -142,11 +142,15 @@ subscribed to iot-2/cmd/run/fmt/json
 
 ## Node-RED
 
+1. Create an Node-RED Starter app from Bluemix catalog.
+2. Bind the IoT Foundation service created before to this app.
+3. Open Node Red
+4. Copy the Node-RED flow from NodeRed/NORDERED.json and import into Node-RED.
 
-1. Bind the IoTF service created before to this app. The resultant application dashboard looks like the diagram above.
-2. Now copy the Node-RED flow from NodeRed/NORDERED.json and import into Node-RED.
+Once you have imported the flow you will need to double click either on the IBM IoT input or output node to open the configuration properties and update the API Key and API Token from above.
 
-Once you have imported the flow you will need to double click on the IBM IoT output node to open the configuration properties and replace the device ID with the device ID you registered your drone with in Bluemix. For example, replace `my_little_sphero ` with your deviceid.
+Then replace the device ID with the device ID you registered your drone with in Bluemix. 
+For example, replace `my_little_sphero ` with your deviceid.
 
 
 ## Mobile App
