@@ -7,6 +7,10 @@ using MQTT, the [IBM internet of Things Foundation](http://www.ibm.com/cloud-com
 
 You can control movement of the droid using a Node-RED flow. A sample flow has been included below. 
 
+
+![alt text](images/NodeRed_gif.gif "NodeRed")
+
+
 # Running The Sample
 
 ## Hardware
@@ -72,6 +76,9 @@ Following is a screenshot of IoTF dashboard.
 
 
 ### Modify the BLE ID
+
+![alt text](images/BLE_gif.gif "BLE")
+
 The BB-8 and Ollie use a Bluetooth Low Energy (LE) interface, also known as "Bluetooth Smart" or "Bluetooth 4.0/4.1". You must have a hardware adapter that supports the Bluetooth 4.x+ standard to connect your computer to your BB-8 or Ollie.
 
 Run the following command:
@@ -100,6 +107,8 @@ Open the spheroDemo.js file and replace the BLE key you got in the previous step
 
 ## Set up the bridging application to run from your laptop
 
+
+![alt text](images/Terminal_gif.gif "Terminal")
 
 1. Open a terminal window and make sure you are in the bb8-bluemix directory. Otherwise `cd bb8-bluemix` to the root of the repository.
 2. Run `npm install` to install all the dependencies.
