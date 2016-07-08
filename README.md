@@ -8,7 +8,7 @@ This project also uses the MQTT wrapper from the [parrot-sample](https://github.
 You can control movement of the droid using a Node-RED flow. A sample flow has been included below. 
 
 
-![alt text](images/NodeRed_gif.gif "NodeRed")
+![alt text](images/BB8_gif.gif "BB8")
 
 
 # Running The Sample
@@ -53,6 +53,8 @@ Next get API keys for your application.
 Take note of the Key and the Auth Token as you will need these to run the sample.
 
 **The IoTF service can not retrieve these authentication details for you later. So make sure to store these in a secure place**
+
+ ![alt text](images/NodeRed_gif.gif "NodeRed")
 
 ### Update the configuration file 
 
