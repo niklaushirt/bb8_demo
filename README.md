@@ -161,15 +161,28 @@ For example, replace `my_little_sphero ` with your deviceid.
 
 Make sure you have installed the CloudFoundry command line.
 
-Make sure the the IOT Foundation name in the manifest.yml and app.js file (line 21) correspond to the name you have given your IOT service created earlier.
+**Make sure the the IOT Foundation name in the manifest.yml and app.js file (line 21) correspond to the name you have given your IOT service created earlier!!!**
+
+<img src="images/config.png" width="400">
+<img src="images/manifest.png" width="200">
+
 
 Open a Teminal and cd into the Mobile_Web_App folder and type:
 
 1. cf api https://api.ng.bluemix.net 
 2. cf login -u yourBluemixID -o yourBluemixID -s dev
-3. cf push
+3. cf push -n myAppName
 
-Now go to the app's URL with your phone (for example http://iot.mybluemix.net/iot-phone/) enter a device name (I use `demo` otherwise you'll have to update it in the NodeRed `FROM iPhone` Node ) and a password (remember this, as you won't be able to change it afterwards!).
+Your command line should look similar to this:
+![alt text](images/cf_push.jpg	 "Command Line")
+
+
+Check that both devices show up in your IOT Foundation Dashboard
+![alt text](images/devicesgraph.png	 "Command Line")
+![alt text](images/devices.png	 "Command Line")
+
+##Play...
+Now go to the app's URL with your phone (for example http://myAppName.mybluemix.net/iot-phone/) enter a device name (I use `demo` otherwise you'll have to update it in the NodeRed `FROM iPhone` Node ) and a password (remember this, as you won't be able to change it afterwards!).
 Be aware that both are case sensitive!
 
 Now you should can activate the debug nodes in NodeRed and you should get some data streaming through your flow when you move the phone.
