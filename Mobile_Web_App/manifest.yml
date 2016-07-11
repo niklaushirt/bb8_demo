@@ -1,7 +1,7 @@
 ---
 applications:
 - services:
-  - IOT Foundation
+  - testIOT
   host: discover-iot-sample-niklaushirt-1624
   name: discover-iot-sample-niklaushirt-1624
   disk: 128M

@@ -18,7 +18,7 @@ if (process.env.VCAP_SERVICES) {
 
 	var iotService = config['iotf-service'];
 	for (var index in iotService) {
-		if (iotService[index].name === 'IOT Foundation') {
+		if (iotService[index].name === 'testIOT') {
 			credentials = iotService[index].credentials;
 		}
 	}
