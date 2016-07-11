@@ -188,4 +188,37 @@ Be aware that both are case sensitive!
 Now you should can activate the debug nodes in NodeRed and you should get some data streaming through your flow when you move the phone.
 And if all is well setup your bb8 should start rolling...
 
-Happy demoing...
+Happy playing...
+
+
+
+
+
+
+##Troubleshooting...
+If you get
+
+
+```
+FAILED
+The route myAppName is already in use.
+```
+Solution
+
+Change the name ('myAppName') in the ```cf push``` command 
+
+
+If you get
+
+```
+FAILED
+Could not find service IOT Foundation to bind to myAppName
+```
+
+Solution
+
+Check the name of your IOT Foundation Service in the in the manifest.yml and app.js.
+
+
+
+
